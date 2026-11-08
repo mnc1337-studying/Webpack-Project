@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpack project (basic)</title>
+</head>
+
+<body class="page">
+    <div class="container">
+        <h1 class="title">Підбірка цікавих фактів про космос</h1>
+        <p id="output" class="output"></p>
+
+        <ul class="facts">
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">1</span>
+                <h2 class="fact__title">Доба довша за рік</h2>
+                <p class="fact__text">Венера обертається навколо своєї осі приблизно за 243 земні доби, а навколо
+                    Сонця облітає за 225. Тож доба там триває довше, ніж рік.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">2</span>
+                <h2 class="fact__title">Сонце домінує</h2>
+                <p class="fact__text">На Сонце припадає близько 99,86% усієї маси Сонячної системи. Решта, зокрема
+                    всі планети, це лише крихти.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">3</span>
+                <h2 class="fact__title">Світло в дорозі</h2>
+                <p class="fact__text">Промінь від Сонця летить до Землі приблизно 8 хвилин і 20 секунд. Ми бачимо
+                    його таким, яким воно було вже трохи раніше.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">4</span>
+                <h2 class="fact__title">Вічний шторм</h2>
+                <p class="fact__text">Велику червону пляму на Юпітері астрономи спостерігають понад 150 років. Це
+                    гігантський шторм, що за розміром більший за Землю.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">5</span>
+                <h2 class="fact__title">Важка ложка</h2>
+                <p class="fact__text">Чайна ложка речовини нейтронної зірки важила б мільярди тонн, бо така зірка
+                    складається з неймовірно щільно упакованих частинок.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">6</span>
+                <h2 class="fact__title">Сатурн на воді</h2>
+                <p class="fact__text">Середня густина Сатурна менша за густину води. Якби існував достатньо
+                    великий океан, планета б у ньому трималася на поверхні.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">7</span>
+                <h2 class="fact__title">Сліди на Місяці</h2>
+                <p class="fact__text">На Місяці немає вітру й дощів, тому відбитки астронавтів можуть зберігатися
+                    мільйони років.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">8</span>
+                <h2 class="fact__title">Найдальший мандрівник</h2>
+                <p class="fact__text">Зонд «Вояджер-1», запущений 1977 року, нині є найвіддаленішим від Землі
+                    рукотворним об'єктом.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">9</span>
+                <h2 class="fact__title">Марсіанський велетень</h2>
+                <p class="fact__text">Гора Олімп на Марсі це найвищий вулкан Сонячної системи. Його висота близько
+                    22 км, тобто приблизно у 2,5 раза більше за Еверест.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">10</span>
+                <h2 class="fact__title">Найгарячіша планета</h2>
+                <p class="fact__text">Меркурій найближчий до Сонця, але найспекотніша планета це Венера. Її густа
+                    атмосфера створює парниковий ефект, і температура там сягає понад 460 °C.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">11</span>
+                <h2 class="fact__title">Вітри Нептуна</h2>
+                <p class="fact__text">На Нептуні дмуть найшвидші вітри Сонячної системи: їхня швидкість може
+                    сягати майже 2000 км/год.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">12</span>
+                <h2 class="fact__title">Планета на боці</h2>
+                <p class="fact__text">Вісь обертання Урана нахилена майже на 98°, тому планета обертається, ніби
+                    «лежачи на боці».</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">13</span>
+                <h2 class="fact__title">Мільярди зірок</h2>
+                <p class="fact__text">Наша галактика Чумацький Шлях налічує від 100 до 400 мільярдів зірок, і
+                    навколо багатьох із них обертаються власні планети.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">14</span>
+                <h2 class="fact__title">Перше фото чорної діри</h2>
+                <p class="fact__text">2019 року астрономи показали перше зображення тіні надмасивної чорної діри в
+                    центрі галактики M87. Його зібрали з даних мережі радіотелескопів по всій Землі.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">15</span>
+                <h2 class="fact__title">Тиша космосу</h2>
+                <p class="fact__text">У космосі майже немає повітря, тож звук там не поширюється: для нього
+                    потрібне середовище, в якому він може рухатися.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">16</span>
+                <h2 class="fact__title">Місяць тікає</h2>
+                <p class="fact__text">Місяць віддаляється від Землі приблизно на 3,8 см щороку, десь так швидко,
+                    як ростуть людські нігті (значення середнє, бо це індивідуально).</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">17</span>
+                <h2 class="fact__title">Тонкі кільця</h2>
+                <p class="fact__text">Кільця Сатурна складаються здебільшого з крижаних частинок. У ширину вони
+                    сягають сотень тисяч кілометрів, а завтовшки місцями лише близько десяти метрів.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">18</span>
+                <h2 class="fact__title">Шістнадцять світанків</h2>
+                <p class="fact__text">Міжнародна космічна станція облітає Землю приблизно за 90 хвилин, тож її
+                    екіпаж бачить близько 16 сходів Сонця щодоби.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">19</span>
+                <h2 class="fact__title">Карликова планета</h2>
+                <p class="fact__text">До 2006 року Плутон вважали дев'ятою планетою, але Міжнародний астрономічний
+                    союз перевів його до розряду карликових планет.</p>
+            </li>
+            <li class="fact">
+                <span class="fact__number" aria-hidden="true">20</span>
+                <h2 class="fact__title">Зустріч галактик</h2>
+                <p class="fact__text">Галактика Андромеди наближається до Чумацького Шляху, і за прогнозами
+                    астрономів вони зіллються приблизно через 4-5 мільярдів років.</p>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
