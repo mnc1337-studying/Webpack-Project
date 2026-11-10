@@ -1,0 +1,30 @@
+@container-width: 640px;
+@gap: 24px;
+
+.page {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Courier New PS', 'Courier New', monospace;
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+.header {
+    padding: @gap 16px 0;
+    text-align: center;
+
+    &__title {
+        margin: 0;
+        font-size: 2rem;
+        background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.container {
+    max-width: @container-width;
+    margin: 0 auto;
+    padding: @gap 16px 48px;
+}

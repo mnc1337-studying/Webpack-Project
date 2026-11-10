@@ -1,0 +1,108 @@
+$radius: 12px;
+$transition: 0.2s ease;
+
+.todo {
+    padding: 24px;
+    border-radius: $radius;
+    background: var(--color-surface);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+
+    &__form {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    &__input {
+        flex: 1;
+        min-width: 0;
+        padding: 12px 14px;
+        font: inherit;
+        color: var(--color-text);
+        border: 2px solid rgba(148, 163, 184, 0.3);
+        border-radius: 10px;
+        background: transparent;
+        transition: border-color $transition;
+
+        &:focus {
+            outline: none;
+            border-color: var(--color-primary);
+        }
+    }
+
+    &__counter {
+        margin: 0 0 16px;
+        font-size: 0.9rem;
+        color: var(--color-muted);
+    }
+
+    &__list {
+        display: grid;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    background: rgba(148, 163, 184, 0.12);
+    transition: opacity $transition;
+
+    &__checkbox {
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        accent-color: var(--color-primary);
+    }
+
+    &__text {
+        flex: 1;
+        word-break: break-word;
+    }
+
+    &__delete {
+        padding: 4px 8px;
+        font: inherit;
+        color: var(--color-muted);
+        cursor: pointer;
+        border: 0;
+        border-radius: 6px;
+        background: transparent;
+        transition: color $transition, background $transition;
+
+        &:hover {
+            color: var(--color-wrong);
+            background: rgba(239, 68, 68, 0.15);
+        }
+    }
+
+    &--done {
+        opacity: 0.6;
+
+        .task__text {
+            text-decoration: line-through;
+        }
+    }
+}
+
+.button {
+    padding: 12px 24px;
+    font: inherit;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    transition: transform $transition;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+}

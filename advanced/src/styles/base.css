@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Courier New PS';
+    src: url('../assets/fonts/CourierNewPSMT.woff2') format('woff2'),
+        url('../assets/fonts/CourierNewPSMT.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Courier New PS';
+    src: url('../assets/fonts/CourierNewPS-BoldMT.woff2') format('woff2'),
+        url('../assets/fonts/CourierNewPS-BoldMT.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --color-bg: #0f172a;
+    --color-surface: #1e293b;
+    --color-text: #e2e8f0;
+    --color-muted: #94a3b8;
+    --color-primary: #6366f1;
+    --color-accent: #22d3ee;
+    --color-wrong: #ef4444;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
