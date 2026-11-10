@@ -32,44 +32,45 @@ const deleteTask = (id: number): void => {
 }
 
 const render = (): void => {
+    const taskBlockName = 'task';
     list.replaceChildren();
 
     tasks.forEach((task) => {
         const item = document.createElement('li');
-        item.className = task.done ? 'task task--done' : 'task';
+        item.className = task.done ? `${taskBlockName} ${taskBlockName}--done` : taskBlockName;
 
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
-        checkbox.className = 'task__checkbox';
+        checkbox.className = `${taskBlockName}__checkbox`;
         checkbox.checked = task.done;
         checkbox.addEventListener('change', () => {
             toggleTask(task.id);
             render();
-        })
+        });
 
         const text = document.createElement('span');
-        text.className = 'task__text';
+        text.className = `${taskBlockName}__text`;
         text.textContent = task.text;
 
         const remove = document.createElement('button');
         remove.type = 'button';
-        remove.className = 'task__delete';
+        remove.className = `${taskBlockName}__delete`;
         remove.textContent = '✕';
         remove.setAttribute('aria-label', 'Видалити задачу');
         remove.addEventListener('click', () => {
             deleteTask(task.id);
             render();
-        })
+        });
 
         item.append(checkbox, text, remove);
         list.append(item);
-    })
+    });
 
     const doneCount = tasks.filter((task) => task.done).length;
 
     counter.textContent =
         tasks.length === 0 ? 'Поки що задач немає' : `Виконано ${doneCount} з ${tasks.length}`;
-}
+};
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
